@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	    <meta charset="utf-8">
+	    <title>超人不会飞</title>
+	    <link rel="icon" type="img/x-icon" href="img/favicon.ico" />
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    
+		<script type="text/javascript">
+			(function(){var timer = setTimeout(this.marquee, 500);}()); 
+			    function marquee() {
+			        var scrollWidth = $('#affiche').width();
+			        var textWidth = $('.affiche_text').width();
+			        var i = scrollWidth;
+			        setInterval(function() {
+			            i--;
+			            if(i < -textWidth ) {
+			                i = scrollWidth;
+			            }
+			            $('.affiche_text').animate({'left': i+'px'}, 2);
+			        }, 20);
+			    }
+		</script>
+		<script>
+			window._bd_share_config = {
+				common : {
+					bdText : '分享您刚看到的新鲜事...',	
+					bdDesc : '分享您刚看到的新鲜事...',	
+					bdUrl : '分享您刚看到的新鲜事...', 	
+					bdPic : '分享您刚看到的新鲜事...'
+				},
+				share : [{
+					"bdSize" : 16
+				}],
+				slide : [{	   
+					bdImg : 0,
+					bdPos : "right",
+					bdTop : 150
+				}],
+				image : [{
+					viewType : 'list',
+					viewPos : 'top',
+					viewColor : 'black',
+					viewSize : '16',
+					viewList : ['qzone','tsina','huaban','tqq','renren']
+				}],
+				selectShare : [{
+					"bdselectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf']
+				}]
+			}
+			with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+		</script>
+
+	</head>
+	<body class="body">
+    	<div id="affiche">
+        	<span class="affiche_text"><strong>富强！民主！文明！和谐！自由！平等！公正！法治！爱国！敬业！诚信！友善!!!</strong></span>
+		</div>
+		<div class="row">
+			<div class="clo">
+		      <canvas id="clock" width=200px height=200px></canvas>
+		      <h6 >What time is it now ？？？</h6>
+		  	</div>
+	        <div class="motto">
+	            <header><h1>撸起袖子加油干</h1></header>
+	            <h3>生活就像海洋，只有意志坚强的人才能到达彼岸。<br/>
+	            Life is like the ocean, and only strong-willed people can reach the other side.</h3>
+	        <a href="https://qzone.qq.com/gy/404/" style="color:red">404页面儿童打拐</a>
+	        </div>
+        </div>
+
+        <!-- <div class="bdsharebuttonbox" data-tag="share_1">
+	    	<a class="bds_tsina" data-cmd="tsina"></a>
+			<a class="bds_sqq" data-cmd="sqq"></a>
+	    	<a class="bds_qzone" data-cmd="qzone"></a>	
+			<a class="bds_weixin" data-cmd="weixin"></a>
+			<a class="bds_more" data-cmd="more">更多</a>
+			<a class="bds_count" data-cmd="count"></a>
+		</div> -->
+		
+	  	<script type="text/javascript" src="clock.js"></script>
+	  	<script type="text/javascript" src="canvas.js"></script>
+	</body>
+</html>

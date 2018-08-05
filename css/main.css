@@ -1,0 +1,73 @@
+.body{
+	background:url(../header-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.clo{
+	/*text-align:left;*/
+    padding-left:8%;
+    margin-top:5%;
+    float:left
+}
+
+#clock{
+	border:0px solid #ccc
+}
+
+#affiche {
+    color: red;
+    display: block;
+    width: 50%;
+    height: 18px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.affiche_text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    line-height: 18px;
+    display: block;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.motto{
+
+	margin-top:10%;
+	margin-left: auto!important;
+	flex: 0 0 50%;
+    max-width: 45%;
+}
+
+.motto h1{
+	color: #FFFFCC;
+	font-size: 3rem;
+    text-shadow: 2px 2px 8px #000000;
+    padding-bottom: 5px;
+}
+
+.motto h3{
+	color: #eee;
+	font-size: 1rem;
+    text-shadow: 2px 2px 8px #000000;
+    padding-bottom: 5px;
+}
