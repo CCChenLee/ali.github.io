@@ -97,10 +97,10 @@ body{
 
 .tm-img-container {
     width: 96%;
-    max-width: 1020px;
+    max-width: 900px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 900px) {
     .tm-img-container {
         max-width: 300px;
         width: 30%;
