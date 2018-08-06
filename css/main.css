@@ -1,5 +1,5 @@
-.body{
-	background:url(../header-bg.jpg);
+body{
+	background:url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -51,7 +51,6 @@
 }
 
 .motto{
-
 	margin-top:10%;
 	margin-left: auto!important;
 	flex: 0 0 50%;
@@ -66,8 +65,74 @@
 }
 
 .motto h3{
-	color: #eee;
-	font-size: 1rem;
+	color: #424242;
+	font-size: 1.6rem;
     text-shadow: 2px 2px 8px #000000;
     padding-bottom: 5px;
+}
+
+.container {
+    float: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.parallax-window {
+    min-height: 50vh;
+    /*background: transparent;*/
+    display: flex;
+    align-items: center;
+}
+
+.row1 {
+    margin-top:5%;
+    margin-left: auto!important;
+    /*margin-right: auto!important;*/
+    flex: 0 0 50%;
+    max-width: 45%;
+}
+
+.tm-img-container {
+    width: 96%;
+    max-width: 1020px;
+}
+
+@media screen and (max-width: 991px) {
+    .tm-img-container {
+        max-width: 300px;
+        width: 30%;
+    }
+    .tm-slider-img {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+
+.tm-slider-img {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -50px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: deepskyblue;
 }
